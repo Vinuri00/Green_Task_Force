@@ -1,0 +1,39 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.row0 {
+    text-align: center;
+    /*margin-top: 200px;*/
+}
+
+.row1 {
+    position: absolute;
+    top: 80px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+}
+
+.row2 {
+    position: absolute;
+    top: 130px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    width: 300px;
+    left: 43.5%;
+}
+
+.u {
+    border-color: forestgreen;
+}

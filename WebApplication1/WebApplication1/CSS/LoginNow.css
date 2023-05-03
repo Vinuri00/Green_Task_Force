@@ -1,0 +1,109 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Image*/
+
+    body::before {
+        content: "";
+        background-image: url('../images/bg.jpg');
+        background-size: 100% 100%;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        filter: brightness(50%);
+    }
+
+/* Panel */
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    height: 476px;
+    width: 497px;
+}
+
+/* LOGIN NOW*/
+
+.h1 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 316px;
+    font-size: 40px;
+    color: white;
+    font-family: Stencil;
+    font-style: normal;
+}
+
+/* enter your email */
+
+.TextBox1 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
+
+/* enter your password */
+
+.TextBox2 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 80px;
+    left: 40px;
+}
+
+/* Login Now */
+
+.Button1 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    left: 40px;
+    width: 422px;
+}
+
+/* don't have an account? */
+
+.Label1 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 150px;
+    left: -60px;
+    width: 231px;
+}
+
+/* register now */
+
+.Button2 {
+    color: #009933;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 150px;
+    left: 286px;
+    width: 134px;
+    height: 40px;
+}

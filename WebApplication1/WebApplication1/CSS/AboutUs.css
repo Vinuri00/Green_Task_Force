@@ -1,0 +1,53 @@
+﻿/* Background Image*/
+
+body::before {
+    content: "";
+    background-size: 100% 100%;
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: brightness(50%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Label1 {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    /*font-size: 40px;*/
+    position: absolute;
+    top: 91px;
+    right: 631px;
+    height: 26px;
+    width: 109px;
+}
+
+.Label2 {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 118px;
+    right: 515px;
+    height: 55px;
+    width: 228px;
+}
+
+.column3 {
+    flex: 1;
+    padding: 10px;
+}
+
+/*.u {
+    text-decoration-color: #228B22;
+}*/
