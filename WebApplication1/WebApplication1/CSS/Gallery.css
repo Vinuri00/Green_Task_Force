@@ -12,7 +12,7 @@
 
 .row1 {
     position: absolute;
-    top: 80px;
+    top: 65px;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -24,9 +24,9 @@
 
 .row2 {
     position: absolute;
-    top: 130px;
+    top: 115px;
     font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Algerian;
     font-weight: bold;
     color: black;
     text-align: center;
@@ -34,6 +34,17 @@
     left: 43.5%;
 }
 
-.u {
-    border-color: forestgreen;
+.underline {
+    text-decoration-color: forestgreen;
 }
+
+.imgrow1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-bottom: 50px;
+}
+
+/*.imgrow1 img {
+    margin-right: 20px;
+}*/
