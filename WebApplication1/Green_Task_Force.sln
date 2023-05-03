@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33529.622
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{1DA16ACF-EBFF-4AE8-AA30-FFE623B6B319}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Green_Task_Force", "WebApplication1\Green_Task_Force.csproj", "{1DA16ACF-EBFF-4AE8-AA30-FFE623B6B319}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

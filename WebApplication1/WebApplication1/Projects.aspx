@@ -5,10 +5,10 @@
 
     <asp:Panel ID="Panel1" runat="server" BackColor="White" CssClass="Panel1"></asp:Panel>
 
-    <h1 style="position: relative; top:230px; font-family: Anton; font-size: 45px; color: #FFFFFF; left: 160px; width: 249px; font-style: normal; font-weight: bold">PROJECTS</h1>
-    <h1 style="position: relative; top:210px; font-family: Anton; font-size: 45px; color: #FFFFFF; left: 230px; width: 249px; font-style: normal; font-weight: bold">120</h1>
+    <h1 style="position: relative; top:50%; font-family: Anton; font-size: 45px; color: #FFFFFF; left: 160px; width: 249px; font-style: normal; font-weight: bold">PROJECTS</h1>
+    <h1 style="position: relative; top:50%; font-family: Anton; font-size: 45px; color: #FFFFFF; left: 230px; width: 249px; font-style: normal; font-weight: bold">120</h1>
     
-    <h1 style="position: relative; top:90px; font-family: Anton; font-size: 45px; color: #FFFFFF; right: -780px; width: 249px; font-style: normal; font-weight: bold">MEMBERS</h1>
-    <h1 style="position: relative; top:70px; font-family: Anton; font-size: 45px; color: #FFFFFF; right: -850px; width: 249px; font-style: normal; font-weight: bold">98</h1>    
+    <h1 style="position: relative; top:270px; font-family: Anton; font-size: 45px; color: #FFFFFF; right: -780px; width: 249px; font-style: normal; font-weight: bold" >MEMBERS</h1>
+    <h1 style="position: relative; top:250px; font-family: Anton; font-size: 45px; color: #FFFFFF; right: -850px; width: 249px; font-style: normal; font-weight: bold">98</h1>    
 
 </asp:Content>

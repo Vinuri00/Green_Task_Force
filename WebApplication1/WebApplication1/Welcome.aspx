@@ -5,8 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Welcome - GTF</title>
-    <link href="StyleSheet1.css" rel="stylesheet" />
-    
+    <link href="CSS/Welcome.css" rel="stylesheet" />    
 </head>
 <body>
     <form runat="server">
