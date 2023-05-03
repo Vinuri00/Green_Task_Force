@@ -156,6 +156,8 @@
     <Content Include="Projects.aspx" />
     <Content Include="RegisterNow.aspx" />
     <Content Include="LoginNow.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="Welcome.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\bg.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -269,6 +271,13 @@
     </Compile>
     <Compile Include="LoginNow.aspx.designer.cs">
       <DependentUpon>LoginNow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

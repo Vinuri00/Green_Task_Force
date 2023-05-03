@@ -1,0 +1,52 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+    body::before {
+        content: "";
+        background-image: url('images/bg.jpg');
+        background-size: 100% 100%;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        filter: brightness(50%)
+    }
+
+p {
+    position: relative;
+    color: #ffffff;
+    font-size: 12rem;
+    line-height: 0.3;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    height: 215px;
+}
+
+.homesec1 {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+    .homesec1::before {
+        content: "";
+        background-image: url('../images/photo_2023-05-02_15-55-37.jpeg');
+        background-size: 100% 100%;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        filter: brightness(50%)
+    }
