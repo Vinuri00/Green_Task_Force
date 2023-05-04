@@ -139,6 +139,7 @@
     <Content Include="CSS\LoginNow.css" />
     <Content Include="CSS\Projects.css" />
     <Content Include="CSS\RegisterNow.css" />
+    <Content Include="CSS\ReadMore.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -165,6 +166,7 @@
     <Content Include="images\img9.jpeg" />
     <Content Include="images\projects.jpeg" />
     <Content Include="Projects.aspx" />
+    <Content Include="ReadMore.aspx" />
     <Content Include="RegisterNow.aspx" />
     <Content Include="LoginNow.aspx" />
     <Content Include="CSS\Welcome.css" />
@@ -247,6 +249,13 @@
       <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadMore.aspx.cs">
+      <DependentUpon>ReadMore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReadMore.aspx.designer.cs">
+      <DependentUpon>ReadMore.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
