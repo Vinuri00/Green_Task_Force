@@ -18,7 +18,7 @@
         <asp:Label ID="Label2" runat="server" Text="WHO ARE WE" Font-Bold="True" Font-Names="Rockwell Condensed" CssClass="Label2" Font-Size="XX-Large"></asp:Label>
 
         <div class="column3">
-            <asp:Image ID="Image1" runat="server" Height="498px" ImageUrl="~/images/aboutus.jpeg" Width="674px" />
+            <asp:Image ID="Image1" runat="server" Height="461px" ImageUrl="~/images/aboutus.jpeg" Width="654px" />
         </div>
 
     </div>
