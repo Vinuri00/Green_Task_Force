@@ -31,7 +31,6 @@
                 <asp:Label ID="Label1" runat="server" CssClass="Label1" Text="don't have an account?"></asp:Label>
 
             </asp:Panel>
-
             
         </div>
     </form>

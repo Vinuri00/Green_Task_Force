@@ -1,0 +1,22 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading1 {
+    position: absolute;
+    top: 80px;
+    font-size: 35px;
+    /*font-family: Algerian;*/
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    width: 350px;
+    left: 43.5%;
+}
+
+.underline {
+    text-decoration-color: forestgreen;
+}

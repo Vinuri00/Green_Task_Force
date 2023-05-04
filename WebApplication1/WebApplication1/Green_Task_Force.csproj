@@ -137,9 +137,13 @@
     <Content Include="CSS\Gallery.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\LoginNow.css" />
+    <Content Include="CSS\Map.css" />
+    <Content Include="CSS\News.css" />
     <Content Include="CSS\Projects.css" />
     <Content Include="CSS\RegisterNow.css" />
     <Content Include="CSS\ReadMore.css" />
+    <Content Include="CSS\RepoDetails.css" />
+    <Content Include="CSS\RepoProblems.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -155,6 +159,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="images\aboutus.jpeg" />
     <Content Include="images\bg.jpeg" />
+    <Content Include="images\map.jpeg" />
+    <Content Include="images\repodetails.jpeg" />
     <Content Include="images\img1.jpeg" />
     <Content Include="images\img2.jpeg" />
     <Content Include="images\img3.jpeg" />
@@ -165,11 +171,16 @@
     <Content Include="images\img8.jpeg" />
     <Content Include="images\img9.jpeg" />
     <Content Include="images\projects.jpeg" />
+    <Content Include="images\repoproblems.jpeg" />
+    <Content Include="Map.aspx" />
+    <Content Include="News.aspx" />
     <Content Include="Projects.aspx" />
     <Content Include="ReadMore.aspx" />
     <Content Include="RegisterNow.aspx" />
     <Content Include="LoginNow.aspx" />
     <Content Include="CSS\Welcome.css" />
+    <Content Include="RepoDetails.aspx" />
+    <Content Include="RepoProblems.aspx" />
     <Content Include="Welcome.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -241,6 +252,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Projects.aspx.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,6 +280,20 @@
     </Compile>
     <Compile Include="ReadMore.aspx.designer.cs">
       <DependentUpon>ReadMore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepoDetails.aspx.cs">
+      <DependentUpon>RepoDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepoDetails.aspx.designer.cs">
+      <DependentUpon>RepoDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepoProblems.aspx.cs">
+      <DependentUpon>RepoProblems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepoProblems.aspx.designer.cs">
+      <DependentUpon>RepoProblems.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

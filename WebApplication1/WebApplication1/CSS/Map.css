@@ -1,0 +1,35 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Background Image*/
+
+    body::before {
+        content: "";
+        background-image: url('../images/map.jpeg');
+        background-size: 100% 100%;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        filter: brightness(50%);
+    }
+
+/* Panel */
+
+.map {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+}

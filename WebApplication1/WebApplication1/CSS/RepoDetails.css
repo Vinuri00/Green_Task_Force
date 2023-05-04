@@ -1,0 +1,56 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Background Image*/
+
+    body::before {
+        content: "";
+        background-image: url('../images/repodetails.jpeg');
+        background-size: 100% 100%;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        filter: brightness(50%);
+    }
+
+/* Panel */
+
+.Panel1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+}
+
+/* Report Details */
+
+.h1 {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    width: 316px;
+    font-size: 40px;
+    color: white;
+    font-family: Stencil;
+    font-style: normal;
+}
+
+.submit {
+    position: relative;
+    text-align: center;
+    top: 480px;
+    left: -120px;
+    width: 900px;
+}
