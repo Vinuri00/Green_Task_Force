@@ -134,6 +134,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CSS\AboutUs.css" />
+    <Content Include="CSS\Footer.css" />
     <Content Include="CSS\Gallery.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\LoginNow.css" />
@@ -147,6 +148,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Footer.aspx" />
     <Content Include="Gallery.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -241,6 +243,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.aspx.designer.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gallery.aspx.cs">
       <DependentUpon>Gallery.aspx</DependentUpon>
