@@ -145,6 +145,7 @@
     <Content Include="CSS\ReadMore.css" />
     <Content Include="CSS\RepoDetails.css" />
     <Content Include="CSS\RepoProblems.css" />
+    <Content Include="CSS\Vision.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -174,6 +175,7 @@
     <Content Include="images\img9.jpeg" />
     <Content Include="images\projects.jpeg" />
     <Content Include="images\repoproblems.jpeg" />
+    <Content Include="images\vision.jpeg" />
     <Content Include="Map.aspx" />
     <Content Include="News.aspx" />
     <Content Include="Projects.aspx" />
@@ -183,6 +185,7 @@
     <Content Include="CSS\Welcome.css" />
     <Content Include="RepoDetails.aspx" />
     <Content Include="RepoProblems.aspx" />
+    <Content Include="Vision.aspx" />
     <Content Include="Welcome.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -338,6 +341,13 @@
     </Compile>
     <Compile Include="LoginNow.aspx.designer.cs">
       <DependentUpon>LoginNow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vision.aspx.cs">
+      <DependentUpon>Vision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vision.aspx.designer.cs">
+      <DependentUpon>Vision.aspx</DependentUpon>
     </Compile>
     <Compile Include="Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>
