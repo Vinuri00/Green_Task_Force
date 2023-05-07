@@ -29,14 +29,14 @@ body::before {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: -2147483648px;
+    left: -979653%;
     transform: translate(-50%, -50%);
 }
 
 .readmore {
     position: relative;
-    top: 220px;
-    left: 450px;
+    top: 667px;
+    left: 925px;
     width: 400px;
 }

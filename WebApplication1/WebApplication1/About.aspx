@@ -3,18 +3,14 @@
 
     <link rel="stylesheet" type="text/css" href="CSS/Gallery.css" />
 
-    <div style="text-align: center; margin-top: 200px">
-        <h2 class="row1" style="width: 150px; left: 740px;"> ABOUT US </h2>
-        <p class="row2" style="font-family: Algerian;"><u class="underline"> WHO ARE WE </u></p>
-    </div>
 
+    <div style="text-align: center; margin-top: 100px; height: 412px;">
+        <h1 style="align-items:center;">
+            ABOUT US
+        </h1><br />
+        <asp:Image ID="Image1" runat="server" Height="381px" Width="607px" ImageUrl="Images/aboutus.jpeg" CssClass="img1" ImageAlign="Left" />
 
-    <div class="imgrow1" style="top: 150px;">
-        
-        <asp:Image ID="Image1" runat="server" Height="381px" Width="607px" ImageUrl="Images/aboutus.jpeg" CssClass="img1" />
-    
-        <p style="text-align: justify; padding: 20px; width: 1200px; height: 500px;">
-
+        <p style="text-align: justify; padding: 20px; height: 302px; width: 713px;">
             Welcome to our website, which is devoted to making our communities' environment cleaner and more sustainable. To encourage a healthier and more beautiful living
             environment, our group is dedicated to eliminating trash and waste from our roads and public areas in collaboration with local municipal authorities. 
             We are a group of committed professionals and volunteers that are passionate about building a more livable and sustainable society. Our goal is to raise people's awareness of 
@@ -25,10 +21,15 @@
             the environment. You can read more about our company, our ambitions, and the services we provide here. Additionally, you can find details on upcoming activities, volunteer 
             opportunities, and ways to participate in our campaigns. We think that by cooperating, we can build a better future for the earth and our local
             communities. We appreciate your interest in our mission and your visit to our website. We want you to work with us to make the world cleaner and more sustainable.
-        
         </p>
-
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+
 
 </asp:Content>
 

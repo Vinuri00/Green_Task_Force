@@ -65,7 +65,7 @@ dfn {
 }
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0.67em 0 0.67em 0px;
 }
 mark {
   background: #ff0;
@@ -1114,7 +1114,7 @@ figure {
 }
 img {
   vertical-align: middle;
-    margin-top: 0px;
+    margin-top: 2px;
 }
 .img-responsive,
 .thumbnail > img,
@@ -1288,7 +1288,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px 632px;
+  margin: 0 0 10px 922px;
 }
 .lead {
   margin-bottom: 20px;
@@ -1672,6 +1672,9 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+    top: 12px;
+    left: 110px;
+    width: 1337px;
 }
 .col-xs-1,
 .col-xs-2,

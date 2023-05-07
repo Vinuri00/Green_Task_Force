@@ -9,7 +9,7 @@
 
     body::before {
         content: "";
-        background-image: url('../images/repoproblems.jpeg');
+        background-image: url('../images/bg.jpeg');
         background-size: 100% 100%;
         position: absolute;
         background-attachment: fixed;
@@ -18,39 +18,123 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        /*filter: brightness(50%);*/
+        filter: brightness(50%);
     }
 
 /* Panel */
 
-.Panel1 {
+.container {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.8;
 }
 
-/* Report Details */
+/* REGISTER NOW*/
 
 .h1 {
     position: absolute;
-    top: 30px;
-    left: 80px;
-    width: 350px;
+    top: 50px;
+    left: 100px;
+    width: 316px;
     font-size: 40px;
     color: white;
     font-family: Stencil;
     font-style: normal;
 }
 
-.submit {
+/* enter your name */
+
+.TextBox1 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
     position: relative;
-    text-align: center;
-    top: 480px;
-    left: -160px;
-    width: 900px;
+    top: 60px;
+    left: 10px;
+}
+
+/* enter your email */
+
+.TextBox2 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 80px;
+    left: 40px;
+}
+
+/* enter your password */
+
+.TextBox3 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+
+/* confirm password */
+
+.TextBox4 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 120px;
+    left: 40px;
+}
+
+/* GTF Members */
+
+.DropDownList1 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 140px;
+    left: 40px;
+    width: 422px;
+}
+
+/* Register Now - Button1*/
+.Button1 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 170px;
+    left: 40px;
+    width: 422px;
+}
+
+/* already have an account? */
+
+.Label1 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 200px;
+    left: -60px;
+    width: 231px;
+}
+
+/* Login now - Button2*/
+
+.Button2 {
+    color: #009933;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 200px;
+    left: 286px;
+    width: 134px;
+    height: 40px;
 }

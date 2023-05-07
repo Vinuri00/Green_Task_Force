@@ -186,6 +186,7 @@
     <Content Include="RepoDetails.aspx" />
     <Content Include="RepoProblems.aspx" />
     <Content Include="Vision.aspx" />
+    <Content Include="WebForm4.aspx" />
     <Content Include="Welcome.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -348,6 +349,13 @@
     </Compile>
     <Compile Include="Vision.aspx.designer.cs">
       <DependentUpon>Vision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>

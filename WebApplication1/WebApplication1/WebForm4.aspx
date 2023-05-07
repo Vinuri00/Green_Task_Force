@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/Welcome.css" />
 </head>
 <body>
-    <form id="form1" runat="server" action="RegisterNow.aspx">
+    <form id="form1" runat="server">
        
             
 
