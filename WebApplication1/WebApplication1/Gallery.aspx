@@ -4,8 +4,8 @@
     <link rel="stylesheet" type="text/css" href="CSS/Gallery.css" />
 
     <div style="text-align: center; margin-top: 200px">
-        <h2 class="row1"> GALLERY </h2>
-        <p class="row2" style="font-family: Algerian;"><u class="underline"> OUR PROJECTS </u></p>
+        <h2 class="row1" style="left: 600px;"> GALLERY </h2>
+        <p class="row2" style="font-family: Algerian; left: 0px;"><u class="underline"> OUR PROJECTS </u></p>
     </div>
 
 

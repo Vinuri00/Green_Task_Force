@@ -1,17 +1,31 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RepoProblems.aspx.cs" Inherits="WebApplication1.RepoProblem" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <link rel="stylesheet" type="text/css" href="CSS/RepoProblems.css" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
 
-   <div class="container">
-  <div class="row justify-content-center">
+    <%--<asp:Panel ID="Panel1" runat="server" BackColor="Black" Height="580px" Width="1400px" CssClass="Panel1">
+
+        <h1 style="position: relative; top: 15px; font-family: Anton; font-size: 40px; color: #FFFFFF; left: 175px; width: 332px; right: -222px; font-style: normal;">Report Problems</h1>
+
+
+        <asp:Button ID="submit" runat="server" Text="Submit" Width="900px" BackColor="#009933" Font-Bold="True" Font-Names="Calibri" Font-Size="20px" ForeColor="White" Height="35px" style="cursor:pointer; border-radius:0px; border:1px solid #009933" CssClass="submit"/>
+
+    </asp:Panel>--%>
+
+<%--<div class="container" style="display:grid; place-content:center; margin: 20px;">--%>
+<div class="container" style="display:flex; justify-content:center; align-items: center; margin: 20px;">
+  <div class="row justify-content-center" style="width:1000px;">
     <div class="col-md-9">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h1 class="text-center">Report a Problem</h1>
+          <h1 class="text-center" style="position: relative; top: 15px; font-family: Anton; font-size: 40px; color: black; left: 175px; width: 332px; right: -222px; font-style: normal;">Report a Problem</h1>
         </div>
-        <div class="panel-body">
+
+          <br />
+        
+          <div class="panel-body" style="justify-content:center; align-items:center;">
+
           <form>
             <div class="row">
               <div class="col-md-6">
@@ -63,7 +77,7 @@
               <br />
             <div class="row mt-3">
               <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" style="background-color: forestgreen; width:550px;">Submit</button>
               </div>
             </div>
           </form>
@@ -72,7 +86,6 @@
     </div>
   </div>
 </div>
-
 
 
 </asp:Content>

@@ -3,9 +3,9 @@
 
     <link rel="stylesheet" type="text/css" href="CSS/News.css" />
 
-    <div style="text-align: center; margin-top: 200px">
+    <div style="text-align: center; margin-top: 300px; height: 174px; width: 586px;">
 
-        <p class="heading1" style="font-family: Algerian;"><u class="underline"> NEWS AND ARTICLES </u></p>
+        <p class="heading1" style="font-family: Algerian; left: 10px;"><u class="underline"> NEWS AND ARTICLES </u></p>
 
     </div>
 

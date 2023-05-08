@@ -5,7 +5,21 @@
     justify-content: center;
 }
 
-/*.row1 {
+.content1 {
+    left: 150px;
+}
+
+
+
+
+/*body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.row1 {
     position: absolute;
     top: 65px;
     font-size: 25px;
@@ -28,16 +42,17 @@
     text-align: center;
     width: 300px;
     left: 43.5%;
-}*/
+}
 
-/*.underline {
+.underline {
     text-decoration-color: forestgreen;
 }
 
 .img1 {
-    display: inline-block;
+    display: flex;
     justify-content: space-between;
     margin: 20px 0;
     padding-bottom: 60px;
     top: -150px;
 }*/
+

@@ -5,6 +5,20 @@
     justify-content: center;
 }
 
+.content1 {
+    left: 150px;
+}
+
+
+
+
+/*body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .row1 {
     position: absolute;
     top: 65px;
@@ -21,9 +35,9 @@
 .row2 {
     position: absolute;
     top: 115px;
-    font-size: 35px;
+    font-size: 35px;*/
     /*font-family: Algerian;*/
-    font-weight: bold;
+    /*font-weight: bold;
     color: black;
     text-align: center;
     width: 300px;
@@ -45,4 +59,4 @@
 .p {
     position: absolute;
     top: 300px;
-}
+}*/

@@ -14,7 +14,7 @@
 
 <body>
 
-    <form id="form1" runat="server" action="RepoProblems.aspx">
+    <form id="form1" runat="server">
         <div class="container" style="border-radius:50px;">
 
             <asp:Panel ID="Panel1" runat="server" BackColor="Black" Height="623px" Width="499px" BorderStyle="None" BorderWidth="10px" style="border-radius:50px;">
