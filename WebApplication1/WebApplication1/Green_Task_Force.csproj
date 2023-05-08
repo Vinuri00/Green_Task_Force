@@ -137,6 +137,7 @@
     <Content Include="CSS\Footer.css" />
     <Content Include="CSS\Gallery.css" />
     <Content Include="CSS\Default.css" />
+    <Content Include="CSS\Home.css" />
     <Content Include="CSS\LoginNow.css" />
     <Content Include="CSS\Map.css" />
     <Content Include="CSS\News.css" />
@@ -186,6 +187,7 @@
     <Content Include="RepoDetails.aspx" />
     <Content Include="RepoProblems.aspx" />
     <Content Include="Vision.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="Welcome.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -348,6 +350,13 @@
     </Compile>
     <Compile Include="Vision.aspx.designer.cs">
       <DependentUpon>Vision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>
