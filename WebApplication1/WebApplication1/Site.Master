@@ -53,7 +53,7 @@
                         <li><a runat="server" href="~/Welcome.aspx">Home</a></li>
                         <li><a runat="server" href="~/About.aspx">About us</a></li>
                         <li><a runat="server" href="~/Projects.aspx">Our Projects</a></li>
-                        <li><a runat="server" href="~/RepoProblem.aspx">Report A Problem</a></li>
+                        <li><a runat="server" href="~/RepoProblems.aspx">Report A Problem</a></li>
                         <li><a runat="server" href="~/RepoDetails.aspx">Report Details</a></li>
                         <li><a runat="server" href="~/Map.aspx">Map</a></li>
                     </ul>

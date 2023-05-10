@@ -26,7 +26,7 @@
         
           <div class="panel-body" style="justify-content:center; align-items:center;">
 
-          <form>
+          <form id="form1" runat="server" name="form1">
             <div class="row">
               <div class="col-md-6">
                 <label for="inputFirstName" class="form-label">First Name</label>

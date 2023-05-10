@@ -13,7 +13,7 @@
 
 <body>
 
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" name="form1">
         <div class="container" style="border-radius:50px;">
 
             <asp:Panel ID="Panel1" runat="server" BackColor="Black" Height="479px" Width="499px" BorderStyle="None" BorderWidth="10px" style="border-radius:50px;">
@@ -24,9 +24,9 @@
                 
                 <asp:TextBox ID="TextBox2" runat="server" placeholder="enter your password" Height="31px" Width="415px" Wrap="False" CssClass="TextBox2" BackColor="Black"></asp:TextBox>
 
-                <asp:Button ID="Button1" runat="server" Text="Login Now" style="margin-left: 0px; width: 424px; height: 41px;" CssClass="Button1" BackColor="#009933"/>
+                <asp:Button ID="Button1" runat="server" Text="Login Now" style="margin-left: 0px; width: 424px; height: 41px; cursor:pointer;" CssClass="Button1" BackColor="#009933" OnClick="Button1_Click1"/>
 
-                <asp:Button ID="Button2" runat="server" Text="register now" CssClass="Button2" BackColor="Black" BorderColor="Black"/>
+                <asp:Button ID="Button2" runat="server" Text="register now" CssClass="Button2" BackColor="Black" BorderColor="Black" style="cursor:pointer;" PostBackUrl="~/RegisterNow.aspx"/>
 
                 <asp:Label ID="Label1" runat="server" CssClass="Label1" Text="don't have an account?"></asp:Label>
 
