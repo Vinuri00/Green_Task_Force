@@ -39,6 +39,8 @@
 
             if (document.form5.inputDescription.value.length < 1) // Description 
                 alert(" Description cannot be empty");
+
+            return true;
         }
     </script>
 
@@ -107,7 +109,7 @@
               <br />
             <div class="row mt-3">
               <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-primary" style="background-color: forestgreen; width:550px;">Submit</button>
+                <button type="submit" class="btn btn-primary" style="background-color: forestgreen; width:550px;" onsubmit="return y();">Submit</button>
               </div>
             </div>
           </form>
@@ -116,6 +118,5 @@
     </div>
   </div>
 </div>
-
 
 </asp:Content>

@@ -8,24 +8,40 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="CSS/LoginNow.css" />
 
-    <script>
-        function l() {
+        <script>
+            function loginvalidation() {
+                var email = document.forms["form1"]["TextBox1"].value;
+                var password = document.forms["form1"]["TextBox2"].value;
+                var emailRegex = /^\S+@\S+\.\S+$/;
 
-            if (document.form1.TextBox1.value.length < 1) //email cannot be empty
-                alert("Email cannot be empty");
+                if (email == "" || password == "") {
+                    alert("Please fill out all fields");
+                    return false;
+                }
 
-            if (document.form1.TextBox2.value.length < 1) //Password cannot be empty
-                alert("Password cannot be empty");
+                if (!emailRegex.test(email)) {
+                    alert("Please enter a valid email address");
+                    return false;
+                }
 
-        }
-    </script>
+                if (password.length < 6) {
+                    alert("Password must be at least 6 characters long");
+                    return false;
+                }
+
+                return true;
+            }
+
+            document.forms["form1"].onsubmit = loginvalidation;
+        </script>
+
 
 </head>
 
 
 <body>
 
-    <form id="form1" runat="server" name="form1">
+    <form id="form1" runat="server" name="form1" onsubmit="return loginvalidation();">
         <div class="container" style="border-radius: 50px;">
 
             <asp:Panel ID="Panel1" runat="server" BackColor="Black" Height="479px" Width="499px" BorderStyle="None" BorderWidth="10px" Style="border-radius: 50px;">

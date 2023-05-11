@@ -8,32 +8,66 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="CSS/RegisterNow.css" />
 
+
+
     <script>
-        function x() {
+        function validateForm() {
+            var name = document.getElementById("TextBox1").value;
+            var email = document.getElementById("TextBox2").value;
+            var password = document.getElementById("TextBox3").value;
+            var confirmPassword = document.getElementById("TextBox4").value;
+            var role = document.getElementById("DropDownList1").value;
 
-            if (document.form1.TextBox1.value.length < 1) //name
-                alert("Name cannot be empty");
+            // Check if name is empty
+            if (name == "") {
+                alert("Name field is required");
+                return false;
+            }
 
-            if (document.form1.TextBox2.value.length < 1) //email
-                alert("Email cannot be empty");
+            // Check if email is empty and valid format
+            if (email == "") {
+                alert("Email field is required");
+                return false;
+            } else {
+                var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!regex.test(email)) {
+                    alert("Please enter a valid email address");
+                    return false;
+                }
+            }
 
-            if (document.form1.TextBox3.value.length < 1) //password
-                alert("Password cannot be empty");
+            // Check if password is empty and has minimum 8 characters
+            if (password == "") {
+                alert("Password field is required");
+                return false;
+            } else if (password.length < 8) {
+                alert("Password must have at least 8 characters");
+                return false;
+            }
 
-            if (document.form1.TextBox4.value != document.form1.TextBox3.value) // confirm password
-                alert("Should match the password");
+            // Check if confirm password matches password
+            if (confirmPassword != password) {
+                alert("Confirm password does not match password");
+                return false;
+            }
 
-            if (document.form1.DropDownList1.selectedIndex == 0) //dropdown add a new lsit at the begining
-                alert("Member type cannot be empty");
+            // Check if role is selected
+            if (role == "") {
+                alert("Please select a role");
+                return false;
+            }
+
+            return true;
         }
     </script>
+
 
 </head>
 
 
 <body>
 
-    <form id="form1" runat="server" method="post" action="LoginNow.aspx">
+    <form id="form1" runat="server" method="post" action="LoginNow.aspx" onsubmit="return x();">
         <div class="container" style="border-radius: 50px;">
 
             <asp:Panel ID="Panel1" runat="server" BackColor="Black" Height="623px" Width="499px" BorderStyle="None" BorderWidth="10px" Style="border-radius: 50px;">
@@ -54,7 +88,9 @@
                     <asp:ListItem Value="Option1" Text="Admin">Admin</asp:ListItem>
                 </asp:DropDownList>
 
-                <asp:Button ID="Button1" runat="server" Text="Register Now" Style="margin-left: 0px; width: 424px; height: 41px; cursor: pointer;" CssClass="Button1" BackColor="#009933" OnClick="Button1_Click" UseSubmitBehavior="true" />
+                <%--<asp:Button ID="Button1" runat="server" Text="Register Now" Style="margin-left: 0px; width: 424px; height: 41px; cursor: pointer;" CssClass="Button1" BackColor="#009933" OnClick="Button1_Click" UseSubmitBehavior="true" />--%>
+                <asp:Button ID="Button1" runat="server" Text="Register Now" Style="margin-left: 0px; width: 424px; height: 41px; cursor: pointer;" CssClass="Button1" BackColor="#009933" OnClick="Button1_Click" UseSubmitBehavior="false" OnClientClick="return validateForm();" />
+
 
                 <asp:Button ID="Button2" runat="server" Text="Login now" CssClass="Button2" BackColor="Black" BorderColor="Black" Style="cursor: pointer;" PostBackUrl="~/LoginNow.aspx" />
 
@@ -65,38 +101,5 @@
 
         </div>
     </form>
-    <script>
-        function x() {
-
-            if (document.form1.TextBox1.value.length < 1) //name
-            {
-                alert("Name cannot be empty");
-                return false;
-            }
-            if (document.form1.TextBox2.value.length < 1) //email
-            {
-                alert("Email cannot be empty");
-                return false;
-            }
-            if (document.form1.TextBox3.value.length < 1) //password
-            {
-                alert("Password cannot be empty");
-                return false;
-            }
-            if (document.form1.TextBox4.value != document.form1.TextBox3.value) // confirm password
-            {
-                alert("Should match the password");
-                return false;
-            }
-            if (document.form1.DropDownList1.selectedIndex == 0) //dropdown add a new lsit at the begining
-            {
-                alert("Member type cannot be empty");
-                return false;
-            }
-            return true;
-
-
-        }
-    </script>
 </body>
 </html>
