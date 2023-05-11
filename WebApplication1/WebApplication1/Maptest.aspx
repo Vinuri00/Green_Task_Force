@@ -16,9 +16,9 @@
             #map,
             #pano {
               margin: auto;
-              height: 70%;
+              height: 95%;
               width: 100%;
-              top: 70px;
+              top: 5%;
             }
            </style>
     </head>
