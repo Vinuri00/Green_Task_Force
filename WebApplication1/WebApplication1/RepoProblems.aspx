@@ -58,7 +58,7 @@
         
           <div class="panel-body" style="justify-content:center; align-items:center;">
 
-          <form>
+          <form >
             <div class="row">
               <div class="col-md-6">
                 <label for="inputFirstName" class="form-label">First Name</label>
@@ -109,7 +109,7 @@
               <br />
             <div class="row mt-3">
               <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-primary" style="background-color: forestgreen; width:550px;" onsubmit="return y();">Submit</button>
+                <button type="submit" class="btn btn-primary" style="background-color: forestgreen; width:550px" onclientclick="return y();">Submit </button>
               </div>
             </div>
           </form>

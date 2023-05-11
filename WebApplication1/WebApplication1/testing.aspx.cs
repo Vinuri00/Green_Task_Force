@@ -19,10 +19,10 @@ namespace WebApplication1
         protected void Button2_Click(object sender, EventArgs e)
         {
 
-            string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Github\Green_Task_Force\WebApplication1\Database\GTF.mdf;Integrated Security=True;Connect Timeout=30";
+            string constr = @"Data Source=.\sqlexpress;Initial Catalog=GreenTaskForce;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT Id, pass FROM Tab1 WHERE Id = 1", con))
+                using (SqlCommand cmd = new SqlCommand("SELECT RID, name FROM [dbo].[registration] WHERE RID = 1", con))
                 {
                     con.Open();
                     using (SqlDataReader sdr = cmd.ExecuteReader())
@@ -30,8 +30,8 @@ namespace WebApplication1
                         if (sdr.HasRows)
                         {
                             sdr.Read();
-                            id.Text = sdr["Id"].ToString();
-                            pass.Text = sdr["pass"].ToString();
+                            id.Text = sdr["RID"].ToString();
+                            pass.Text = sdr["name"].ToString();
                         }
                     }
                     con.Close();

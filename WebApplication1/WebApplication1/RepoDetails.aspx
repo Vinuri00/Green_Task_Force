@@ -12,7 +12,7 @@
 
     </asp:Panel>--%>
     <br /><br /><br />
-    <div class="container-fluid">
+    <div class="container-fluid" style="color:white">
         <div class="row">
             <div class="col-md-5">
                 <div class="card">
@@ -88,10 +88,10 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT * FROM [registration]"></asp:SqlDataSource>
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="accident_id" DataSourceID="SqlDataSource1">
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" SelectCommand="SELECT * FROM [dbo].[reportdetails]"></asp:SqlDataSource>
+                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="GTF_ID" DataSourceID="SqlDataSource1">
                                     <Columns>
-                                        <asp:BoundField DataField="accident_id" HeaderText="ID" ReadOnly="True" SortExpression="accident_id" />
+                                        <asp:BoundField DataField="GTF_ID" HeaderText="ID" ReadOnly="True" SortExpression="GTF_ID" />
                                         <asp:TemplateField>
                                             <ItemTemplate>
                                                 <div class="auto-style2">
@@ -99,36 +99,36 @@
                                                         <div class="col-lg-10">
                                                             <dic class="row">
                                                                 <div class="col-12">
-                                                                    Vehicle Type -
-                                                             <asp:Label ID="Label1" runat="server" Font-Bold="True" Text='<%# Eval("vehicle_type") %>'></asp:Label>
-                                                                    &nbsp; |&nbsp; Reason -
-                                                             <asp:Label ID="Label2" runat="server" Font-Bold="True" Text='<%# Eval("reason") %>'></asp:Label>
+                                                                    Name -
+                                                             <asp:Label ID="Label1" runat="server" Font-Bold="True" Text='<%# Eval("Fname") %>'></asp:Label>
+                                                                    &nbsp; |&nbsp; Contactnum -
+                                                             <asp:Label ID="Label2" runat="server" Font-Bold="True" Text='<%# Eval("Contactnum") %>'></asp:Label>
                                                                     &nbsp; |&nbsp; Date -
-                                                             <asp:Label ID="Label3" runat="server" Font-Bold="True" Text='<%# Eval("accident_date") %>'></asp:Label>
+                                                             <asp:Label ID="Label3" runat="server" Font-Bold="True" Text='<%# Eval("Date") %>'></asp:Label>
 
                                                                 </div>
                                                             </dic>
                                                             <dic class="row">
                                                                 <div class="col-12">
-                                                                    Approve -
-                                                             <asp:Label ID="Label4" runat="server" Font-Bold="True" Text='<%# Eval("police_approve") %>'></asp:Label>
-                                                                    &nbsp; |&nbsp; RDA Approve -
-                                                             <asp:Label ID="Label5" runat="server" Font-Bold="True" Text='<%# Eval("rda_approve") %>'></asp:Label>
-                                                                    &nbsp; |&nbsp; Insurance Claim -
-                                                             <asp:Label ID="Label6" runat="server" Font-Bold="True" Text='<%# Eval("insurance_claim") %>'></asp:Label>
+                                                                    Coordinates -
+                                                             <asp:Label ID="Label4" runat="server" Font-Bold="True" Text='<%# Eval("Coordinates") %>'></asp:Label>
+                                                                    &nbsp; |&nbsp; GTF_ID -
+                                                             <asp:Label ID="Label5" runat="server" Font-Bold="True" Text='<%# Eval("GTF_ID") %>'></asp:Label>
+                                                                    &nbsp; |&nbsp; NIC -
+                                                             <asp:Label ID="Label6" runat="server" Font-Bold="True" Text='<%# Eval("NIC") %>'></asp:Label>
 
                                                                 </div>
                                                             </dic>
                                                             <dic class="row">
                                                                 <div class="col-12">
-                                                                    Description About Accident -
+                                                                    Description -
                                                              <asp:Label ID="Label7" runat="server" Font-Bold="True" Text='<%# Eval("description") %>'></asp:Label>
 
                                                                 </div>
                                                             </dic>
                                                         </div>
                                                         <div class="col-lg-2">
-                                                            <asp:Image Width="95" Height="85" CssClass="img-fluid" ID="Image1" runat="server" ImageUrl='<%# Eval("accident_img_link") %>' />
+                                                            <asp:Image Width="95" Height="85" CssClass="img-fluid" ID="Image1" runat="server" ImageUrl='<%# Eval("Image") %>' />
                                                         </div>
                                                     </div>
                                                 </div>

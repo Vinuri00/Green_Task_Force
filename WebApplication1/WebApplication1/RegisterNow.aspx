@@ -88,8 +88,7 @@
                     <asp:ListItem Value="Option1" Text="Admin">Admin</asp:ListItem>
                 </asp:DropDownList>
 
-                <%--<asp:Button ID="Button1" runat="server" Text="Register Now" Style="margin-left: 0px; width: 424px; height: 41px; cursor: pointer;" CssClass="Button1" BackColor="#009933" OnClick="Button1_Click" UseSubmitBehavior="true" />--%>
-                <asp:Button ID="Button1" runat="server" Text="Register Now" Style="margin-left: 0px; width: 424px; height: 41px; cursor: pointer;" CssClass="Button1" BackColor="#009933" OnClick="Button1_Click" UseSubmitBehavior="false" OnClientClick="return validateForm();" />
+                <asp:Button ID="Button1" runat="server" Text="Register Now" Style="margin-left: 0px; width: 424px; height: 41px; cursor: pointer;" CssClass="Button1" BackColor="#009933"  UseSubmitBehavior="false" OnClientClick="return validateForm();" />
 
 
                 <asp:Button ID="Button2" runat="server" Text="Login now" CssClass="Button2" BackColor="Black" BorderColor="Black" Style="cursor: pointer;" PostBackUrl="~/LoginNow.aspx" />

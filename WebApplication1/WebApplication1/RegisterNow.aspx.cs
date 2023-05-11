@@ -18,7 +18,7 @@ namespace WebApplication1
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button1_ClickR(object sender, EventArgs e)
         {
 
             //// Define connection string
@@ -53,28 +53,30 @@ namespace WebApplication1
             string email = TextBox2.Text;
             string password = TextBox3.Text;
             string role = DropDownList1.SelectedValue;
-            string approval = "Pending"; // or you can set it to null if you want
+            string approval = "Pending"; 
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Github\Green_Task_Force\WebApplication1\Database\GTF.mdf;Integrated Security=True;Connect Timeout=30");
-            string qry = "INSERT INTO registration VALUES('" + name + "','" + email + "','" + password + "','" + role + "','" + approval + "')";
+            string constr = @"Data Source=.\sqlexpress;Initial Catalog=GreenTaskForce;Integrated Security=True";
 
-            SqlCommand cmd = new SqlCommand(qry, con);
-
-
-            try
+            using (SqlConnection con = new SqlConnection(constr))
             {
-
-                con.Open();
-                cmd.ExecuteNonQuery();
-                
-            }
-            catch (SqlException ex)
-            {
-                
-            }
-            finally
-            {
-                con.Close();
+                string qry = "INSERT INTO [dbo].[registration] (name, email, password, role, approval) VALUES (@name, @email, @password, @role, @approval)";
+                using (SqlCommand cmd = new SqlCommand(qry, con))
+                {
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.Parameters.AddWithValue("@role", role);
+                    cmd.Parameters.AddWithValue("@approval", approval);
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (SqlException ex)
+                    {
+                        // Handle the exception
+                    }
+                }
             }
         }
 
