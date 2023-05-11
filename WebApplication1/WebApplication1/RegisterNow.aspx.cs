@@ -32,15 +32,16 @@ namespace WebApplication1
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    
+
                     {
-                        SqlCommand cmd = new SqlCommand("INSERT INTO registration(name,email,password,role,approve) VALUES(@Name@Email,@Password,@Role,@Approve)", connection);
-                        cmd.Parameters.AddWithValue("@Name", name);
-                        cmd.Parameters.AddWithValue("@Email", email);
-                        cmd.Parameters.AddWithValue("@Password", password);
-                        cmd.Parameters.AddWithValue("@Role", role);
-                        cmd.Parameters.AddWithValue("@Approve", "Pending");
+                        SqlCommand cmd = new SqlCommand("INSERT INTO registration(name,email,password,role,approve) VALUES(@name, @email, @password, @role, @approve)", connection);
+                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@password", password);
+                        cmd.Parameters.AddWithValue("@role", role);
+                        cmd.Parameters.AddWithValue("@approve", "Pending");
                         cmd.ExecuteNonQuery();
+
                     }
                 }
                 Response.Redirect("~/LoginNow.aspx");

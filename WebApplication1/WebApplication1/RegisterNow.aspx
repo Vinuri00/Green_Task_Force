@@ -7,7 +7,7 @@
 
     <title></title>
     <link rel="stylesheet" type="text/css" href="CSS/RegisterNow.css" />
-    
+
 
 
 </head>
@@ -15,7 +15,7 @@
 
 <body>
 
-    <form id="form1" runat="server" name="form1" method="post" action="LoginNow.aspx">
+    <form id="form1" runat="server" method="post" action="LoginNow.aspx">
         <div class="container" style="border-radius: 50px;">
 
             <asp:Panel ID="Panel1" runat="server" BackColor="Black" Height="623px" Width="499px" BorderStyle="None" BorderWidth="10px" Style="border-radius: 50px;">
@@ -30,13 +30,13 @@
 
                 <asp:TextBox ID="TextBox4" runat="server" placeholder="confirm your password" Height="31px" Width="415px" Wrap="False" CssClass="TextBox4" BackColor="Black"></asp:TextBox>
 
-                <asp:DropDownList ID="DropDownList1" runat="server" placeholder="GTF Members" Height="31px" CssClass="DropDownList1" BackColor="Black">
+                <asp:DropDownList ID="DropDownList1" name="role" runat="server" placeholder="GTF Members" Height="31px" CssClass="DropDownList1" BackColor="Black">
                     <asp:ListItem Value="Option1" Text="GTF Member">GTF Member</asp:ListItem>
                     <asp:ListItem Value="Option1" Text="Green Captain">Green Captain</asp:ListItem>
                     <asp:ListItem Value="Option1" Text="Admin">Admin</asp:ListItem>
                 </asp:DropDownList>
 
-                <asp:Button ID="Button1" runat="server" Text="Register Now" Style="margin-left: 0px; width: 424px; height: 41px; cursor: pointer;" CssClass="Button1" BackColor="#009933" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Text="Register Now" Style="margin-left: 0px; width: 424px; height: 41px; cursor: pointer;" CssClass="Button1" BackColor="#009933" OnClick="Button1_Click" UseSubmitBehavior="true" />
 
                 <asp:Button ID="Button2" runat="server" Text="Login now" CssClass="Button2" BackColor="Black" BorderColor="Black" Style="cursor: pointer;" PostBackUrl="~/LoginNow.aspx" />
 
