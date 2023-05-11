@@ -144,6 +144,16 @@
 
             </p>
 
+        <br /><br /><br /><br /><br />
+
+        <div class="articles" style="display: flex; justify-content: space-between; margin: 20px 0; padding-bottom: 0px; display: flex;">
+
+            <asp:Image ID="Image12" runat="server" Height="471px" Width="384px" ImageUrl="~/images/article1.jpeg" style="border:3px solid black; position:absolute;left:190.5px;"/>
+            <asp:Image ID="Image13" runat="server" Height="471px" Width="384px" ImageUrl="~/images/article2.jpeg" style="border:3px solid black; position:absolute;left:590.5px;"/>
+            <asp:Image ID="Image14" runat="server" Height="471px" Width="384px" ImageUrl="~/images/article3.jpeg" style="border:3px solid black; position:absolute;left:990px;"/>
+
+        </div>
+
     </div>
 
 

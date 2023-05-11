@@ -168,7 +168,7 @@
                         <br />
 
 
-                        <input type="email" id="email" placeholder="example@example.com" class="size" style="color: forestgreen; background-color: white;" />
+                        <input type="email" id="email" placeholder="example@example.com" class="size" style="color: black; background-color: dimgrey;" />
 
                         <br />
                         <br />

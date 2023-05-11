@@ -13,6 +13,36 @@
 
     </asp:Panel>--%>
 
+    <script>
+        function y() {
+
+            if (document.form5.inputFirstName.value.length < 1) //first name
+                alert("First Name cannot be empty");
+
+            if (document.form5.inputLastName.value.length < 1) //last name
+                alert("Last Name cannot be empty");
+
+            if (document.form5.inputContactNumber.value.length < 10) //contact name
+                alert("Last Name cannot be empty");
+
+            if (isNaN(document.form5.inputContactNumber.value))    // contact number should only include only numbers
+                alert("Contact number should only include numbers");
+
+            if (document.form5.inputNicNumber.value.length < 1) // nic number 
+                alert(" NIC Number cannot be empty");
+
+            if (document.form5.inputGtfIdNumber.value.length < 1) // GTF ID number 
+                alert(" GTF ID Number cannot be empty");
+
+            if (document.form5.inputCoordinates.value.length < 1) // cordinates 
+                alert(" cornates cannot be empty");
+
+            if (document.form5.inputDescription.value.length < 1) // Description 
+                alert(" Description cannot be empty");
+        }
+    </script>
+
+
 <%--<div class="container" style="display:grid; place-content:center; margin: 20px;">--%>
 <div class="container" style="display:flex; justify-content:center; align-items: center; margin: 20px;">
   <div class="row justify-content-center" style="width:1000px;">

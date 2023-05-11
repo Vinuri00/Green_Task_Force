@@ -19,3 +19,10 @@
 .underline {
     text-decoration-color: forestgreen;
 }
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-bottom: 50px;
+}

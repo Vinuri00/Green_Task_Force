@@ -8,7 +8,25 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="CSS/RegisterNow.css" />
 
+    <script>
+        function x() {
 
+            if (document.form1.TextBox1.value.length < 1) //name
+                alert("Name cannot be empty");
+
+            if (document.form1.TextBox2.value.length < 1) //email
+                alert("Email cannot be empty");
+
+            if (document.form1.TextBox3.value.length < 1) //password
+                alert("Password cannot be empty");
+
+            if (document.form1.TextBox4.value != document.form1.TextBox3.value) // confirm password
+                alert("Should match the password");
+
+            if (document.form1.DropDownList1.selectedIndex == 0) //dropdown add a new lsit at the begining
+                alert("Member type cannot be empty");
+        }
+    </script>
 
 </head>
 
