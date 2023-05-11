@@ -12,6 +12,7 @@ namespace WebApplication1
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -20,37 +21,61 @@ namespace WebApplication1
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            string name = TextBox1.Text.ToString();
-            string email = TextBox2.Text.ToString();
-            string password = TextBox3.Text.ToString();
-            string confirmPassword = TextBox4.Text.ToString();
-            string role = DropDownList1.SelectedItem.Text.ToString();
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Github\Green_Task_Force\WebApplication1\Database\GTF.mdf;Integrated Security=True;Connect Timeout=30";
+            //// Define connection string
+            //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Github\Green_Task_Force\WebApplication1\Database\GTF.mdf;Integrated Security=True;Connect Timeout=30";
+
+            //// Create connection object
+            //SqlConnection connection = new SqlConnection(connectionString);
+
+            //// Open connection
+            //connection.Open();
+
+            //// Define SQL INSERT statement with parameters to prevent SQL injection attacks
+            //string sql = "INSERT INTO registration (name, email, password, role, approval) VALUES (@name, @email, @password, @role, @approval)";
+
+            //// Create command object with SQL and connection
+            //SqlCommand command = new SqlCommand(sql, connection);
+
+            //// Add parameters to command object
+            //command.Parameters.AddWithValue("@name", TextBox1.Text);
+            //command.Parameters.AddWithValue("@email", TextBox2.Text);
+            //command.Parameters.AddWithValue("@password", TextBox3.Text);
+            //command.Parameters.AddWithValue("@role", DropDownList1.SelectedValue);
+            //command.Parameters.AddWithValue("@approval", "Pending");
+
+            //// Execute command (INSERT statement)
+            //command.ExecuteNonQuery();
+
+            //// Close connection
+            //connection.Close();
+
+            string name = TextBox1.Text;
+            string email = TextBox2.Text;
+            string password = TextBox3.Text;
+            string role = DropDownList1.SelectedValue;
+            string approval = "Pending"; // or you can set it to null if you want
+
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Github\Green_Task_Force\WebApplication1\Database\GTF.mdf;Integrated Security=True;Connect Timeout=30");
+            string qry = "INSERT INTO registration VALUES('" + name + "','" + email + "','" + password + "','" + role + "','" + approval + "')";
+
+            SqlCommand cmd = new SqlCommand(qry, con);
+
 
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
 
-                    {
-                        SqlCommand cmd = new SqlCommand("INSERT INTO registration(name,email,password,role,approve) VALUES(@name, @email, @password, @role, @approve)", connection);
-                        cmd.Parameters.AddWithValue("@name", name);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@password", password);
-                        cmd.Parameters.AddWithValue("@role", role);
-                        cmd.Parameters.AddWithValue("@approve", "Pending");
-                        cmd.ExecuteNonQuery();
-
-                    }
-                }
-                Response.Redirect("~/LoginNow.aspx");
+                con.Open();
+                cmd.ExecuteNonQuery();
+                
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                Response.Write(ex.Message);
+                
             }
-
+            finally
+            {
+                con.Close();
+            }
         }
 
         protected void Button1_Click1(object sender, EventArgs e)

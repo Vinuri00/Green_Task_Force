@@ -164,6 +164,7 @@
     <Content Include="images\aboutus.jpeg" />
     <Content Include="images\bg.jpeg" />
     <Content Include="images\map.jpeg" />
+    <Content Include="images\mapBG.jpeg" />
     <Content Include="images\repodetails.jpeg" />
     <Content Include="images\img1.jpeg" />
     <Content Include="images\img2.jpeg" />
@@ -178,6 +179,7 @@
     <Content Include="images\repoproblems.jpeg" />
     <Content Include="images\vision.jpeg" />
     <Content Include="Map.aspx" />
+    <Content Include="Maptest.aspx" />
     <Content Include="News.aspx" />
     <Content Include="Projects.aspx" />
     <Content Include="ReadMore.aspx" />
@@ -186,8 +188,9 @@
     <Content Include="CSS\Welcome.css" />
     <Content Include="RepoDetails.aspx" />
     <Content Include="RepoProblems.aspx" />
+    <Content Include="testing.aspx" />
     <Content Include="Vision.aspx" />
-    <Content Include="Home.aspx" />
+    <Content Include="AboutUS.aspx" />
     <Content Include="Welcome.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -273,6 +276,13 @@
     <Compile Include="Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Maptest.aspx.cs">
+      <DependentUpon>Maptest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maptest.aspx.designer.cs">
+      <DependentUpon>Maptest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -323,6 +333,13 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="testing.aspx.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testing.aspx.designer.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -351,12 +368,12 @@
     <Compile Include="Vision.aspx.designer.cs">
       <DependentUpon>Vision.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="AboutUS.aspx.cs">
+      <DependentUpon>AboutUS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="AboutUS.aspx.designer.cs">
+      <DependentUpon>AboutUS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>

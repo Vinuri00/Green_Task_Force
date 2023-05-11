@@ -47,7 +47,7 @@
 
         </div>
     </form>
-    <%--<script>
+    <script>
         function x() {
 
             if (document.form1.TextBox1.value.length < 1) //name
@@ -79,6 +79,6 @@
 
 
         }
-    </script>--%>
+    </script>
 </body>
 </html>
